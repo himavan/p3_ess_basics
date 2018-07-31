@@ -45,4 +45,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Examine Each elements in the projects to understand the concepts
+* Examine Each elements in the project to understand the concepts
