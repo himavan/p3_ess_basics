@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polymer 3 Essentials Basic</title>
+    <base href="/">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h4 {
+            font-weight: 300;
+        }
+        fieldset{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polymer 3 Essential Basics</h1>
+    <!-- First Simple element -->
+    <div class="output">
+        <h4>1. Simple polymer 3 Webcomponent using Polymer's LitElement</h4>
+    </div >
+   <fieldset>
+       <legend>output:</legend>
+       <new-element></new-element>
+   </fieldset>
+    <!-- Static element -->
+    <div class="output">
+            <h4>2. Static polymer 3 Webcomponent using Polymer's LitElement</h4>
+        </div>
+        <fieldset>
+            <legend>output:</legend>
+            <static-element></static-element>
+        </fieldset>
+
+    <!-- Attribute element -->
+    <div class="output">
+        <h4>3. Attributed polymer 3 Webcomponent using Polymer's LitElement</h4>
+    </div>
+    <fieldset>
+        <legend>output:</legend>
+        <attr-element textColor="orange"></attr-element>
+    </fieldset>
+
+    <!-- Shadow element -->
+    <div class="output">
+        <h4>4. Understanding Shadow Dom</h4>
+    </div>
+    <style>
+        .myStyle{
+            color: blue;
+            background: white;
+            font-size: 30px;
+            padding: 10px;
+        }
+    </style>
+    <fieldset>
+        <legend>output:</legend>
+        <div class="myStyle">I'm dom element</div>
+        <shadow-element class="myStyle"></shadow-element>
+    </fieldset>
+
+    <!-- Expression element -->
+    <div class="output">
+        <h4>5. Using expression</h4>
+    </div>
+    <fieldset>
+        <legend>output:</legend>
+        <expr-element disabled></expr-element>
+    </fieldset>
+
+    <!-- Using Slot Lit Elements -->
+    <div class="output">
+        <h4>6. Understanding Slots</h4>
+    </div>
+    <fieldset>
+        <legend>output:</legend>
+        <slot-element>This is my Text.</slot-element>
+    </fieldset>
+
+    <!-- Handling Events -->
+    <div class="output">
+        <h4>7. Handling Events</h4>
+    </div>
+    <fieldset>
+        <legend>output:</legend>
+        <events-element></events-element>
+    </fieldset>
+
+     <!-- Using EventsListener -->
+     <div class="output">
+        <h4>8. Using Event Listeners</h4>
+    </div>
+    <fieldset>
+        <legend>output:</legend>
+        <listener-element></listener-element>
+    </fieldset>
+    
+</body>
+<script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+<script type="module" src="src/new_element.js" ></script>
+<script type="module" src="src/static_element.js" ></script>
+<script type="module" src="src/attribute_element.js" ></script>
+<script type="module" src="src/shadow_dom.js" ></script>
+<script type="module" src="src/expr_element.js" ></script>
+<script type="module" src="src/slot_element.js" ></script>
+<script type="module" src="src/events_element.js" ></script>
+<script type="module" src="src/listener_element.js"></script>
+</html>
